@@ -44,7 +44,7 @@ export default function Header() {
         <>
             {/* <Loader show={loader}/> */}
             {/* <HeadStrip /> */}
-            <header ref={headerRef} className="sticky z-[1001] top-0 bg-primary text-secondary py-1 shadow-[#ffcef9]">
+                <header ref={headerRef} className="fixed w-full bg-white z-[1001] top-0 bg-primary text-secondary py-1 shadow-[#ffb0b0]">
                 <div className="flex justify-between items-center px-2  lg:px-10 py-1">
                     <div className="w-1/4 flex flex-row justify-start items-center pl-3 lg:hidden">
                         <div ref={hamburgerRef} className="hamburger" id="hamburger-1" onClick={toggleHamburger}>

@@ -5,8 +5,8 @@ import { Button, Rating } from "@mui/material";
 export default function HeroSection() {
     return (
         <>
-            <div className="w-full flex flex-col-reverse  items-center h-[calc(100vh-100px)] md:flex-row">
-                <div className="w-full md:w-1/2 py-10 h-[500px] overflow-hidden ">
+            <div className="mt-[70.69px] relative w-full flex flex-col-reverse  items-center h-[calc(100vh-70.69px)] justify-center md:flex-row">
+                <div className="w-full md:w-1/2 py-10 h-[500px] overflow-hidden absolute z-0 md:relative ">
                     <div className="text-center" >
                         <div class="balloon"></div>
                         <div class="balloon"></div>
@@ -15,7 +15,7 @@ export default function HeroSection() {
                         <div class="balloon"></div>
                     </div>
                 </div>
-                <div className="w-full text-center py-10 md:w-1/2 md:text-left  px-5 md:py-5">
+                <div className="w-full text-center h-full flex flex-col items-center justify-center md:items-start bg-[rgba(255,255,255,0.8)] md:w-1/2 md:text-left  px-5 md:py-5 z-10 ">
                     <h2 className="font-extrabold text-4xl text-center md:text-6xl md:text-left tracking-wide ">
                         Decorate your events and parties with us
                     </h2>
