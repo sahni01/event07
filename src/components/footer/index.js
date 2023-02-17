@@ -11,23 +11,23 @@ export default function Footer() {
                 
                 <div className=" flex justify-center items-center">
                 <div className="text-center sm:text-left flex flex-col justify-center items-center sm:block">
-                <Image src={Logo} width={150} className="transition-all hover:scale-105"/>
+                {/* <Image alt="Logo" src={Logo} width={150} className="transition-all hover:scale-105"/> */}
                         <p className="text-xl font-bold">Event 07</p>
                         <p className="text-sm">We Do it, Really Good </p>
                         <br/>
                         
                     <h2 className="text-xl font-extrabold">Get in Touch</h2>
                     <p>Gaur City 2, Greater Noida<br/> Gautam Buddha Nagar  <br /> Uttar Pradesh-201009, India</p>
-                        <a href="tel:+917413002867" className="mr-1 underline hover:text-accent">+91-98719 73507 </a>
-                        <a href="mailto:event07@gmail.com" className="ml-1 underline hover:text-accent"> uniqueballoondecoration101@gmail.com</a>
+                        <a href="tel:+919871973507 " className="mr-1 underline hover:text-accent">+91-98719 73507 </a>
+                        <a href="mailto:ask.event07@gmail.com" className="ml-1 underline hover:text-accent">ask.event07@gmail.com</a>
                         <div className="flex justify-center items-center sm:block">
-                            <IconButton onClick={()=>{window.open("https://api.whatsapp.com/send/?phone=917413002867&text=Hi&type=phone_number&app_absent=0")}}>
+                            <IconButton onClick={()=>{window.open("https://api.whatsapp.com/send/?phone=919871973507&text=Hi&type=phone_number&app_absent=0")}}>
                                 <WhatsApp className="text-primary"/>
                             </IconButton>
-                            <IconButton onClick={()=>{window.open("https://www.facebook.com/people/unique.decoration.for.you/")}}>
+                            <IconButton onClick={()=>{window.open("https://www.facebook.com/people/event07")}}>
                                 <FacebookOutlined className="text-primary"/>
                             </IconButton>
-                            <IconButton onClick={()=>{window.open("https://www.instagram.com/unique.decoration.for.you/")}}>
+                            <IconButton onClick={()=>{window.open("https://www.instagram.com/event07/")}}>
                                 <Instagram className="text-primary" />
                             </IconButton>
                         </div>
@@ -46,7 +46,7 @@ export default function Footer() {
                         <p className="text-[12px] px-5">
                         Copyright 
                         <CopyrightRounded fontSize="small" className="mx-0.5 text-primary"/>
-                        2022 Unique Balloon Decoration. All Rights Reserved. | Designed & Developed with <Favorite fontSize="small"/> By Nitesh Sahni
+                        2022 Event07.com. All Rights Reserved. | Designed & Developed with <Favorite fontSize="small"/> By Nitesh Sahni
                         </p>
                     </div>
                 </div>

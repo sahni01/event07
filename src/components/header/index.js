@@ -55,7 +55,7 @@ export default function Header() {
                     </div>
                     <div className="w-2/4 flex flex-row justify-center items-center lg:w-1/6 text-left">
                         <Link href={"/"}>
-                            <Image src={Logo} alt="logo" width={140} height={70} className="transition-all scale-100 hover:scale-[1.1]" />
+                            <Image src={Logo} alt="Logo" width={140} height={70} className="transition-all scale-100 hover:scale-[1.1]" />
                         </Link>
                     </div>
                     <div className="hidden w-4/6 text-center lg:block">
@@ -65,8 +65,8 @@ export default function Header() {
                             </Link>
                             <Link href={"/decorations"}>
                                 <div className="mx-1 px-4 nav-link dropdown-nav-link"><span className="nav-link-span">
-                                    <div class="dropdown">Decorations
-                                        {/* <ul class="dropdown-menu">
+                                    <div className="dropdown">Decorations
+                                        {/* <ul className="dropdown-menu">
                                             <li><a href="#">action 1</a></li>
                                             <li><a href="#">action 2</a></li>
                                             <li><a href="#">action 3</a></li>
@@ -79,7 +79,7 @@ export default function Header() {
                             <Link href={"/gallery"}>
                                 <li className="mx-1 px-4 nav-link"><span className="nav-link-span">Gallery</span></li>
                             </Link>
-                            <Link href={"/services"}>
+                            <Link href={"/our-services"}>
                                 <li className="mx-1 px-4 nav-link"><span className="nav-link-span">Services</span></li>
                             </Link>
                             <Link href={"/about-us"}>
@@ -97,7 +97,7 @@ export default function Header() {
                         <div className="">
                             <IconButton color="primary" onClick={toggleHamburger} size="large"><CloseIcon fontSize="inherit" /></IconButton>
                         </div>
-                        <div style={{ position: "relative", width: "80vw", height: "100vh", display: "flex", justifyContent: "center", flexDirection: "column" }}>
+                        {/* <div style={{ position: "relative", width: "80vw", height: "100vh", display: "flex", justifyContent: "center", flexDirection: "column" }}>
                             <div style={{ width: "100%", overflow: "auto", padding: 10 }}>
                                 <Button variant="outlined" onClick={() => { router.push("/"); toggleHamburger(); }} style={{ width: "100%", marginBottom: "8px", padding: "10px" }}>Home</Button>
                                 <Button variant="outlined" onClick={() => { router.push("/decorations"); toggleHamburger(); }} style={{ width: "100%", marginBottom: "8px", padding: "10px" }}>Decorations</Button>
@@ -105,7 +105,7 @@ export default function Header() {
                                 <Button variant="outlined" onClick={() => { router.push("/services"); toggleHamburger(); }} style={{ width: "100%", marginBottom: "8px", padding: "10px" }}>Services</Button>
                                 <Button variant="outlined" onClick={() => { router.push("/about-us"); toggleHamburger(); }} style={{ width: "100%", marginBottom: "8px", padding: "10px" }}>About</Button>
                             </div>
-                        </div>
+                        </div> */}
                     </Drawer>
                 </nav>
             </header>
