@@ -2,9 +2,11 @@ import { Cake, Celebration, ChildCare, Favorite } from "@mui/icons-material";
 
 export default function OurServices() {
     return (
-            <div>
+            <div className="mb-10">
                 <div className="mb-10 pt-16 flex flex-row justify-center items-center">
-                <p className=" text-3xl relative text-center font-semibold product-section-heading" >Our Services</p>
+                <div className="section-head my-10 col-span-1 sm:col-span-2 md:col-span-3 ">
+                        <h4 className="text-2xl md:text-3xl"><span>Our</span> Services</h4>
+                    </div>
             </div>
 
                 <div className="container px-2 mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">

@@ -6,9 +6,11 @@ import Logo from "../../assets/logo-light.png";
 
 export default function AboutUs() {
     return (
-        <div>
+        <div className="mb-10">
             <div className="mb-10 pt-16 flex flex-row justify-center items-center">
-                <p className=" text-3xl relative text-center font-semibold product-section-heading" >About Us</p>
+            <div className="section-head my-10 col-span-1 sm:col-span-2 md:col-span-3 ">
+                        <h4 className="text-2xl md:text-3xl"><span>About</span> us</h4>
+                    </div>
             </div>
 
             <div className="container mx-auto grid grid-cols-12 gap-4">

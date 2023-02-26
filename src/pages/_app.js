@@ -1,3 +1,4 @@
+import AppContextProvider from '@/contexts';
 import DefaultLayout from '@/layouts/default-layout'
 import '@/styles/globals.css'
 import { createTheme, ThemeProvider } from '@mui/material'
@@ -20,11 +21,13 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
+    <AppContextProvider>
     <ThemeProvider theme={theme}>
       <DefaultLayout>
         <Component {...pageProps} />
       </DefaultLayout>
     </ThemeProvider>
+    </AppContextProvider>
     </>
   )
 }

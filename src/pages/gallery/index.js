@@ -3,9 +3,11 @@ import ChrismasImage from "../../assets/chrismas-decoration.jpg"
 
 export default function Gallery() {
     return (
-        <div>
+        <div className="mb-10">
             <div className="mb-10 pt-16 flex flex-row justify-center items-center">
-                <p className=" text-3xl relative text-center font-semibold product-section-heading" >Our Gallery</p>
+            <div className="section-head my-10 col-span-1 sm:col-span-2 md:col-span-3 ">
+                        <h4 className="text-2xl md:text-3xl"><span>Our</span> Gallery</h4>
+                    </div>
             </div>
 
             <div className="container mx-auto grid grid-cols-2 md:grid-cols-4 gap-2">

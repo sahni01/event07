@@ -6,8 +6,8 @@ import Logo from "../../assets/logo.png"
 export default function Footer() {
     return (
         <>
-            <footer className="bg-[rgba(0,0,0,0.7)] text-primary mt-10 ">
-                <div className="px-5 py-10 mt-10 grid gap-4 grid-cols-1 sm:grid-cols-2">
+            <footer className="bg-[rgba(0,0,0,0.7)] text-primary ">
+                <div className="px-5 py-10 grid gap-4 grid-cols-1 sm:grid-cols-2">
                 
                 <div className=" flex justify-center items-center">
                 <div className="text-center sm:text-left flex flex-col justify-center items-center sm:block">

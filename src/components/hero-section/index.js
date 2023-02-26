@@ -5,7 +5,7 @@ import { Button, Rating } from "@mui/material";
 export default function HeroSection() {
     return (
         <>
-            <div className="relative w-full flex flex-col-reverse  items-center h-[calc(100vh-70.69px)] justify-center md:flex-row">
+            <div className="relative w-full flex flex-col-reverse  items-center h-[calc(100vh-70.69px)] md:h-auto justify-center md:flex-row">
                 <div className="w-full md:w-1/2 py-10 h-full md:h-[500px] overflow-hidden absolute z-0 md:relative ">
                     <div className="text-center" >
                         <div className="balloon"></div>
@@ -21,13 +21,13 @@ export default function HeroSection() {
                     </h2>
                     <p className="mt-5 md:pr-10" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum amet perferendis magnam commodi sed autem accusantium impedit, labore tenetur inventore rerum in et?
                     </p>
-                    <div className="mt-4 flex items-center justify-center md:justify-start">
+                    <div className="mt-4 flex items-center justify-center flex-col-reverse md:flex-row md:justify-start flex-wrap">
                     <Rating name="read-only" value={5} readOnly className="mr-2" />
-                    Our clients rates us exellent
+                    <p>Our clients rates us exellent</p>
                     </div>
                     <div className="mt-6">
-                    <Button variant="outlined" startIcon={<Favorite/>} className="mr-2 p-3 px-5" >Book Now</Button>
-                    <Button variant="outlined" startIcon={<Call/>} className="ml-2 p-3 px-5" > Contact us</Button>
+                    <Button variant="outlined" startIcon={<Favorite/>} className="mx-2 my-1 md:mr-2 p-3 px-5" >Book Now</Button>
+                    <Button variant="outlined" startIcon={<Call/>} className="mx-2 my-1 md:ml-2 p-3 px-5" > Contact us</Button>
                     </div>
                 </div>
             </div>

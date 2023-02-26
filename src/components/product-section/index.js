@@ -1,12 +1,33 @@
+import { getDecorations } from "@/api"
 import { CurrencyRupee, FavoriteBorder } from "@mui/icons-material"
 import { IconButton } from "@mui/material"
 import Image from "next/image"
 import Link from "next/link"
+import { useEffect, useState } from "react"
 import ChrismasImage from "../../assets/chrismas-decoration.jpg"
 import ProductCard from "../product-card"
 
 
-export default function ProductSection({ title, products = [1, 2, 3, 4], bgGray = false }) {
+export default function ProductSection({ title, bgGray = false, type }) {
+
+    const [decorations, setDecorations] = useState([]);
+
+    useEffect(() => {
+        getDecorationList();
+    }, [type])
+
+
+    const getDecorationList = async () => {
+        try {
+            const response = await getDecorations(type);
+            setDecorations(response);
+            console.log("DECORATIONS LIST ====> ", response);
+        } catch (err) {
+            console.log("GET DECORATIONS ERROR ====> ", err.message);
+        }
+    }
+
+
     return (
         <div className={`w-full py-20 ${bgGray ? 'bg-gray-200' : ''} `}>
             <div className="container mx-auto ">
@@ -14,16 +35,18 @@ export default function ProductSection({ title, products = [1, 2, 3, 4], bgGray 
                 <div className="relative" >
                     <p className=" text-xl font-semibold product-section-heading py-1" >{title}</p>
                 </div>
-                    <Link href={"/"} className="mx-1 px-4 nav-link">
+                    <Link href={"/decorations/"+type} className="mx-1 px-4 nav-link">
                         <span className="nav-link-span">View All</span>
                     </Link>
                 </div>
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 px-5" >
 
                     {
-                        products.map((item, i) => (
+                        decorations.map((item, i) => (
                             <ProductCard
                                 key={i}
+                                item={item}
+                                type={"decorations/"+type}
                             />
                         ))
                     }
