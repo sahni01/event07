@@ -61,7 +61,7 @@ export default function DecorationDetails({ }) {
             <title>{decorationDetails?.title}</title>
             <meta name="description" content="Decoration for your celebrations" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
-            <link rel="icon" href="/logo-light.png" />
+            <link rel="icon" href="/logo.png" />
           </Head>
                 <div className="w-full flex flex-col md:flex-row">
                     <div className="w-full md:w-1/2">

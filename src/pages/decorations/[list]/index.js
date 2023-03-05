@@ -135,7 +135,7 @@ export default function DecorationList({ title, type }) {
         <title>{title}</title>
         <meta name="description" content="Decoration for your celebrations" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/logo-light.png" />
+        <link rel="icon" href="/logo.png" />
       </Head>
             <div>
                 <div className=" pt-16 flex flex-row justify-center items-center">
@@ -146,7 +146,7 @@ export default function DecorationList({ title, type }) {
                     </div>
                 </div>
 
-                <div className={`w-full py-20 bg-gray-200 `}>
+                <div className={`w-full py-20 bg-gray-200 mb-10 `}>
                     <div className="container mx-auto ">
                         {
                             (decorations && decorations.length) ?

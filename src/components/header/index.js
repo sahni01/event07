@@ -6,9 +6,9 @@ import CloseIcon from '@mui/icons-material/Close';
 import Link from "next/link";
 import { useRouter } from "next/router";
 // import { LoaderContext } from "../../context";
-import Logo from "../../assets/logo-light.png"
+import Logo from "../../assets/logo.png"
 import Image from "next/image";
-import { Cake, Celebration, ChevronRight, ChildCare, Collections, Expand, ExpandMore, ExpandMoreSharp, Favorite, FavoriteBorder, FilterVintage, Handshake, Home, Info, Sort, Toys, Wc, WineBar, Woman } from "@mui/icons-material";
+import { Accessibility, Cake, Celebration, ChevronRight, ChildCare, Collections, Expand, ExpandMore, ExpandMoreSharp, Favorite, FavoriteBorder, FilterVintage, Flatware, Girl, Handshake, Home, Info, Sort, Speaker, Toys, VideoCameraBack, VideogameAsset, Wc, WineBar, Woman } from "@mui/icons-material";
 import { theme } from "@/theme";
 // import { Loader } from "../loader";
 
@@ -30,22 +30,22 @@ export default function Header() {
 
     const headerRef = useRef();
 
-    useEffect(() => {
-        window.addEventListener('scroll', () => {
-            // console.log("scroll", window.scrollY)
-            if (window.scrollY > 50) {
-                headerRef?.current?.classList?.add("shadow-md")
-            } else if (window.scrollY < 500) {
-                headerRef?.current?.classList?.remove("shadow-md")
-            }
-        });
-    })
+    // useEffect(() => {
+    //     window.addEventListener('scroll', () => {
+    //         // console.log("scroll", window.scrollY)
+    //         if (window.scrollY > 50) {
+    //             headerRef?.current?.classList?.add("shadow-md")
+    //         } else if (window.scrollY < 500) {
+    //             headerRef?.current?.classList?.remove("shadow-md")
+    //         }
+    //     });
+    // })
 
     return (
         <>
             {/* <Loader show={loader}/> */}
-            {/* <HeadStrip /> */}
-            <header ref={headerRef} className="fixed w-full bg-white z-[1001] top-0 bg-primary text-secondary py-1 shadow-[#ffb0b0]">
+            {/* <HeadStrip/> */}
+            <header ref={headerRef} className="fixed w-full bg-white z-[1001] top-0 bg-primary text-secondary py-1 shadow-[#ffb0b0] shadow-md">
                 <div className="flex justify-between items-center px-2  lg:px-10 py-1">
                     {/* <div className="w-1/4 flex flex-row justify-start items-center pl-3 lg:hidden">
                         <div ref={hamburgerRef} className="hamburger" id="hamburger-1" onClick={toggleHamburger}>
@@ -96,8 +96,8 @@ export default function Header() {
                         </ul>
                     </div>
                     <div className="w-1/4 lg:w-1/6 flex justify-end items-center">
-                        <IconButton color="primary" className="sm:hidden" onClick={() => window.open("tel:+9178509 81426")}><CallIcon /></IconButton>
-                        <Button variant="contained" color="accent" className="hidden bg-accent text-primary  hover:opacity-80 m-0 sm:flex" onClick={() => window.open("tel:+9178509 81426", "_self")}>Book Now</Button>
+                        <IconButton color="primary" className="sm:hidden" onClick={() => window.open("tel:+919871973507")}><CallIcon /></IconButton>
+                        <Button variant="contained" color="accent" className="hidden bg-accent text-primary  hover:opacity-80 m-0 sm:flex" onClick={() => window.open("tel:+919871973507", "_self")}>Book Now</Button>
                     </div>
                 </div>
                 <nav>
@@ -105,7 +105,7 @@ export default function Header() {
                         <div className="w-full flex flex-row justify-end">
                             <IconButton color="primary" onClick={toggleHamburger} size="large"><CloseIcon fontSize="inherit" /></IconButton>
                         </div>
-                        <div style={{ position: "relative", width: "80vw", height: "100vh" }}>
+                        <div style={{ position: "relative", width: "90vw", height: "100vh" }}>
 
                             <MenuList>
                                 <MenuItem onClick={()=>{router.push("/"); toggleHamburger();}}>
@@ -237,6 +237,90 @@ export default function Header() {
                                                 <WineBar fontSize="small" />
                                             </ListItemIcon>
                                             <ListItemText>Party Decorations</ListItemText>
+                                            <Typography variant="body2" color="text.secondary">
+                                                <ChevronRight />
+                                            </Typography>
+                                        </MenuItem>
+
+                                        <Divider />
+
+                                        <MenuItem onClick={()=>{router.push("/decorations/haldi-decorations"); toggleHamburger();}}>
+                                            <ListItemIcon>
+                                                <Girl fontSize="small" />
+                                            </ListItemIcon>
+                                            <ListItemText>Haldi Decorations</ListItemText>
+                                            <Typography variant="body2" color="text.secondary">
+                                                <ChevronRight />
+                                            </Typography>
+                                        </MenuItem>
+
+                                        <Divider />
+
+                                        <MenuItem onClick={()=>{router.push("/decorations/mehndi-decorations"); toggleHamburger();}}>
+                                            <ListItemIcon>
+                                                <Girl fontSize="small" />
+                                            </ListItemIcon>
+                                            <ListItemText>Mehndi Decorations</ListItemText>
+                                            <Typography variant="body2" color="text.secondary">
+                                                <ChevronRight />
+                                            </Typography>
+                                        </MenuItem>
+
+                                        <Divider />
+
+                                        <MenuItem onClick={()=>{router.push("/decorations/live-cartoon-character"); toggleHamburger();}}>
+                                            <ListItemIcon>
+                                                <Accessibility fontSize="small" />
+                                            </ListItemIcon>
+                                            <ListItemText>Live Cartoon Character</ListItemText>
+                                            <Typography variant="body2" color="text.secondary">
+                                                <ChevronRight />
+                                            </Typography>
+                                        </MenuItem>
+
+                                        <Divider />
+
+                                        <MenuItem onClick={()=>{router.push("/decorations/photo-video-shoot"); toggleHamburger();}}>
+                                            <ListItemIcon>
+                                                <VideoCameraBack fontSize="small" />
+                                            </ListItemIcon>
+                                            <ListItemText>Photo & Video Shoot</ListItemText>
+                                            <Typography variant="body2" color="text.secondary">
+                                                <ChevronRight />
+                                            </Typography>
+                                        </MenuItem>
+
+                                        <Divider />
+
+                                        <MenuItem onClick={()=>{router.push("/decorations/catering-services"); toggleHamburger();}}>
+                                            <ListItemIcon>
+                                                <Flatware fontSize="small" />
+                                            </ListItemIcon>
+                                            <ListItemText>Catering Services</ListItemText>
+                                            <Typography variant="body2" color="text.secondary">
+                                                <ChevronRight />
+                                            </Typography>
+                                        </MenuItem>
+
+                                        <Divider />
+
+                                        <MenuItem onClick={()=>{router.push("/decorations/game-corridor"); toggleHamburger();}}>
+                                            <ListItemIcon>
+                                                <VideogameAsset fontSize="small" />
+                                            </ListItemIcon>
+                                            <ListItemText>Game Corridor</ListItemText>
+                                            <Typography variant="body2" color="text.secondary">
+                                                <ChevronRight />
+                                            </Typography>
+                                        </MenuItem>
+
+                                        <Divider />
+
+                                        <MenuItem onClick={()=>{router.push("/decorations/music-system"); toggleHamburger();}}>
+                                            <ListItemIcon>
+                                                <Speaker fontSize="small" />
+                                            </ListItemIcon>
+                                            <ListItemText>Music System</ListItemText>
                                             <Typography variant="body2" color="text.secondary">
                                                 <ChevronRight />
                                             </Typography>

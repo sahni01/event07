@@ -1,7 +1,7 @@
 import { Call, Email, Facebook, Instagram, WhatsApp } from "@mui/icons-material";
 import { IconButton } from "@mui/material";
 import Image from "next/image";
-import Logo from "../../assets/logo-light.png";
+import Logo from "../../assets/logo.png";
 
 
 export default function AboutUs() {

@@ -35,7 +35,7 @@ export default function ProductSection({ title, bgGray = false, type }) {
                 <div className="relative" >
                     <p className=" text-xl font-semibold product-section-heading py-1" >{title}</p>
                 </div>
-                    <Link href={"/decorations/"+type} className="mx-1 px-4 nav-link">
+                    <Link href={"/decorations/"+type} className=" px-1 w-24 nav-link flex flex-row justify-center items-center">
                         <span className="nav-link-span">View All</span>
                     </Link>
                 </div>

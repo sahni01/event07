@@ -60,12 +60,50 @@ export default function Decorations() {
                 <ProductSection
                     title={"Party Decoration"}
                     type={"party-decorations"}
+                    bgGray
+                />
+
+                <ProductSection
+                    title={"Haldi Decoration"}
+                    type={"haldi-decorations"}
+                />
+
+                <ProductSection
+                    title={"Mehndi Decoration"}
+                    type={"mehndi-decorations"}
+                    bgGray
+                />
+
+                <ProductSection
+                    title={"Live Cartoon Character"}
+                    type={"live-cartoon-character"}
+                />
+
+                <ProductSection
+                    title={"Photo & Video Shoot"}
+                    type={"photo-video-shoot"}
+                    bgGray
+                />
+
+                <ProductSection
+                    title={"Catering Service"}
+                    type={"catering-services"}
+                />
+
+                <ProductSection
+                    title={"Game Corridor"}
+                    type={"game-corridor"}
+                    bgGray
+                />
+
+                <ProductSection
+                    title={"Music System"}
+                    type={"music-system"}
                 />
 
                 <ProductSection
                     title={"Other Decoration"}
                     type={"other-decorations"}
-                    bgGray
                 />
 
             </div>
