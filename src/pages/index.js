@@ -1,12 +1,19 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '@/styles/Home.module.css'
-import HeroSection from '@/components/hero-section'
-import Categories from '@/components/categories'
-import ProductSection from '@/components/product-section'
+import dynamic from 'next/dynamic'
+import Loader from '@/components/loader'
 
-// const inter = Inter({ subsets: ['latin'] })
+const HeroSection = dynamic(() => import('@/components/hero-section'), {
+  loading: () => <Loader show={true} />,
+})
+const Categories = dynamic(() => import('@/components/categories'), {
+  loading: () => <Loader show={true} />,
+})
+const ProductSection = dynamic(() => import('@/components/product-section'), {
+  loading: () => <Loader show={true} />,
+})
+
+
+
 
 export default function Home() {
   return (
@@ -111,6 +118,7 @@ export default function Home() {
       <ProductSection
         title={"Other Decoration"}
         type={"other-decorations"}
+        bgGray
       />
     </>
   )

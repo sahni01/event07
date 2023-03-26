@@ -6,7 +6,7 @@ import Logo from "../../assets/logo.png"
 export default function Footer() {
     return (
         <>
-            <footer className="bg-gray-200 text-black ">
+            <footer className="bg-gray-200 text-black mt-10">
                 <div className="px-5 py-10 container mx-auto">
 
                     <div className=" grid grid-cols-1 md:grid-cols-2 gap-4 ">
@@ -43,7 +43,7 @@ export default function Footer() {
 
 
                 </div>
-                <div className=" py-2 bg-gray-300">
+                <div className=" py-2 bg-accent text-primary">
                     <div className="text-center flex flex-col justify-center items-center md:flex-row">
                         <p className="text-[15px] ">
                             Copyright
@@ -51,7 +51,7 @@ export default function Footer() {
                             2022 Event07 | All Rights Reserved. 
                         </p>
 
-                        <a href="https://api.whatsapp.com/send/?phone=918178079555&text=Hi&type=phone_number&app_absent=0" className="ml-1 text-[15px] hover:text-accent">Designed & Developed with <Favorite fontSize="small" className="mx-0.5" color="accent" /> By Nitesh Sahni</a>
+                        <a href="https://api.whatsapp.com/send/?phone=918178079555&text=Hi&type=phone_number&app_absent=0" className="ml-1 text-[15px] hover:text-primary">Designed & Developed with <Favorite fontSize="small" className="mx-0.5 text-primary" color="primary" /> By Nitesh Sahni</a>
                         {/* <a href="https://api.whatsapp.com/send/?phone=918178079555&text=Hi&type=phone_number&app_absent=0" className="ml-1 text-[15px] hover:text-accent">Powered by SBS</a> */}
                     </div>
                 </div>

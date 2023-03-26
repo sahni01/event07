@@ -14,49 +14,49 @@ export default function Gallery() {
 
             <div className="border rounded-xl overflow-hidden relative transition-shadow">
                 <div className="w-full h-full overflow-hidden">
-                    <Image alt="Gallery Image" src={ChrismasImage} width={400} height={400} className="w-full h-full transition-all hover:scale-125" />
+                    <Image alt="Gallery Image" src={'/37.jpg'} width={400} height={400} className="w-full h-full transition-all hover:scale-125" />
                 </div>
             </div>
             
             <div className="border rounded-xl overflow-hidden relative transition-shadow">
                 <div className="w-full h-full overflow-hidden">
-                    <Image alt="Gallery Image" src={ChrismasImage} width={400} height={400} className="w-full h-full transition-all hover:scale-125" />
+                    <Image alt="Gallery Image" src={'/10.jpg'} width={400} height={400} className="w-full h-full transition-all hover:scale-125" />
                 </div>
             </div>
 
             <div className="border rounded-xl overflow-hidden relative transition-shadow">
                 <div className="w-full h-full overflow-hidden">
-                    <Image alt="Gallery Image" src={ChrismasImage} width={400} height={400} className="w-full h-full transition-all hover:scale-125" />
+                    <Image alt="Gallery Image" src={'/11.jpg'} width={400} height={400} className="w-full h-full transition-all hover:scale-125" />
                 </div>
             </div>
 
             <div className="border rounded-xl overflow-hidden relative transition-shadow">
                 <div className="w-full h-full overflow-hidden">
-                    <Image alt="Gallery Image" src={ChrismasImage} width={400} height={400} className="w-full h-full transition-all hover:scale-125" />
+                    <Image alt="Gallery Image" src={'/27.jpg'} width={400} height={400} className="w-full h-full transition-all hover:scale-125" />
                 </div>
             </div>
 
             <div className="border rounded-xl overflow-hidden relative transition-shadow">
                 <div className="w-full h-full overflow-hidden">
-                    <Image alt="Gallery Image" src={ChrismasImage} width={400} height={400} className="w-full h-full transition-all hover:scale-125" />
+                    <Image alt="Gallery Image" src={'/32.jpg'} width={400} height={400} className="w-full h-full transition-all hover:scale-125" />
                 </div>
             </div>
 
             <div className="border rounded-xl overflow-hidden relative transition-shadow">
                 <div className="w-full h-full overflow-hidden">
-                    <Image alt="Gallery Image" src={ChrismasImage} width={400} height={400} className="w-full h-full transition-all hover:scale-125" />
+                    <Image alt="Gallery Image" src={'/37.jpg'} width={400} height={400} className="w-full h-full transition-all hover:scale-125" />
                 </div>
             </div>
 
             <div className="border rounded-xl overflow-hidden relative transition-shadow">
                 <div className="w-full h-full overflow-hidden">
-                    <Image  alt="Gallery Image" src={ChrismasImage} width={400} height={400} className="w-full h-full transition-all hover:scale-125" />
+                    <Image  alt="Gallery Image" src={'/42.jpg'} width={400} height={400} className="w-full h-full transition-all hover:scale-125" />
                 </div>
             </div>
 
             <div className="border rounded-xl overflow-hidden relative transition-shadow">
                 <div className="w-full h-full overflow-hidden">
-                    <Image alt="Gallery Image" src={ChrismasImage} width={400} height={400} className="w-full h-full transition-all hover:scale-125" />
+                    <Image alt="Gallery Image" src={'/49.jpg'} width={400} height={400} className="w-full h-full transition-all hover:scale-125" />
                 </div>
             </div>
 

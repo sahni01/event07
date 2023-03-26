@@ -12,6 +12,7 @@ import moment from 'moment'
 import Head from "next/head";
 import _ from "lodash";
 import { LoaderContext } from "@/contexts/loader";
+import { ReviewsComponent } from "@/components/review";
 
 
 
@@ -30,7 +31,9 @@ export default function DecorationDetails({ }) {
 
     useEffect(() => {
         setLoader(true);
-        getDecorationDetails();
+        if(id){
+            getDecorationDetails();
+        }
     }, [id])
 
     function formatAmount(amount) {
@@ -173,7 +176,8 @@ export default function DecorationDetails({ }) {
                         </div>
                     </div>
                 </div>
-    
+                
+                <ReviewsComponent id={id} type={list} />
             </>
         )
     } else {

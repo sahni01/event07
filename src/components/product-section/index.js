@@ -36,7 +36,7 @@ export default function ProductSection({ title, bgGray = false, type }) {
                     <p className=" text-xl font-semibold product-section-heading py-1" >{title}</p>
                 </div>
                     <Link href={"/decorations/"+type} className=" px-1 w-24 nav-link flex flex-row justify-center items-center">
-                        <span className="nav-link-span">View All</span>
+                        <span className="nav-link-span text-center">View All</span>
                     </Link>
                 </div>
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 px-5" >

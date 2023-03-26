@@ -16,6 +16,14 @@ export default function App({ Component, pageProps }) {
       accent:{
         main: '#ff1616',
       }
+    },
+    components: {
+      MuiIcon: {
+        defaultProps: {
+          // Replace the `material-icons` default value.
+          baseClassName: 'material-icons',
+        },
+      },
     }
   });
 
