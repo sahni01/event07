@@ -14,8 +14,8 @@ export default function ProductCard({item,type}){
 
     return(
        <Link href={`${type}/details?id=${item?._id}`} >
-         <div className="border rounded-xl shadow overflow-hidden relative p-1 bg-white transition-all hover:scale-110">
-                    <div className="w-full rounded-xl overflow-hidden relative">
+         <div className="border rounded-xl shadow overflow-hidden relative p-1 bg-white transition-all hover:scale-105">
+                    <div className="rounded-xl overflow-hidden relative h-80">
                         <Image alt="Product Image" src={item?.image} width={400} height={400} className="w-full h-full rounded-xl transition-all hover:scale-125" />
 
                         <div className="absolute top-2 right-2 bg-accent rounded-xl px-2">

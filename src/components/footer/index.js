@@ -43,7 +43,7 @@ export default function Footer() {
 
 
                 </div>
-                <div className=" py-2 bg-accent text-primary">
+                <div className=" py-2 bg-gray-200 ">
                     <div className="text-center flex flex-col justify-center items-center md:flex-row">
                         <p className="text-[15px] ">
                             Copyright
@@ -51,7 +51,7 @@ export default function Footer() {
                             2022 Event07 | All Rights Reserved. 
                         </p>
 
-                        <a href="https://api.whatsapp.com/send/?phone=918178079555&text=Hi&type=phone_number&app_absent=0" className="ml-1 text-[15px] hover:text-primary">Designed & Developed with <Favorite fontSize="small" className="mx-0.5 text-primary" color="primary" /> By Nitesh Sahni</a>
+                        <a href="https://api.whatsapp.com/send/?phone=918178079555&text=Hi&type=phone_number&app_absent=0" className="ml-1 text-[15px] hover:text-primary">Designed & Developed with <Favorite fontSize="small" className="mx-0.5 text-accent" color="primary" /> By Nitesh Sahni</a>
                         {/* <a href="https://api.whatsapp.com/send/?phone=918178079555&text=Hi&type=phone_number&app_absent=0" className="ml-1 text-[15px] hover:text-accent">Powered by SBS</a> */}
                     </div>
                 </div>

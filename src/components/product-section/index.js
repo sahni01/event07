@@ -39,7 +39,7 @@ export default function ProductSection({ title, bgGray = false, type }) {
                         <span className="nav-link-span text-center">View All</span>
                     </Link>
                 </div>
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 px-5" >
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 px-5" >
 
                     {
                         decorations.map((item, i) => (
