@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
 import Loader from '@/components/loader'
+import { ReviewsComponent } from '@/components/review'
 
 const HeroSection = dynamic(() => import('@/components/hero-section'), {
   loading: () => <Loader show={true} />,
@@ -120,6 +121,10 @@ export default function Home() {
         type={"other-decorations"}
         bgGray
       />
+
+      <div className='mt-5'>
+      <ReviewsComponent id={"homepage"} type={""} />
+      </div>
     </>
   )
 }

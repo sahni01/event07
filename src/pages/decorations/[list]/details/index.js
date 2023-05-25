@@ -84,7 +84,7 @@ export default function DecorationDetails({ }) {
                                 <div className="flex flex-row items-center mt-2">
                                 <p className="text-xl font-semibold text-gray-500 line-through">
                                     <CurrencyRupee />
-                                    {formatAmount(decorationDetails.price)}</p>
+                                    {formatAmount(Number(decorationDetails.price)+((Number(decorationDetails.price)*Number(decorationDetails.discount))/100))}</p>
 
                                 <ArrowForward color="accent" className="mx-3"/>
 
