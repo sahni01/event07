@@ -135,7 +135,7 @@ export default function DecorationList({ title, type }) {
         <title>{title}</title>
         <meta name="description" content="Decoration for your celebrations" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/logo.png" />
+        <link rel="icon" href="/logo1.png" />
       </Head>
             <div>
                 <div className=" pt-16 flex flex-row justify-center items-center">

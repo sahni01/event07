@@ -1,4 +1,4 @@
-import { CurrencyRupee, FavoriteBorder } from "@mui/icons-material"
+import { ArrowForward, CurrencyRupee, FavoriteBorder, WhatsApp } from "@mui/icons-material"
 import { IconButton } from "@mui/material"
 import Image from "next/image"
 import Link from "next/link"
@@ -25,11 +25,24 @@ export default function ProductCard({item,type}){
                     <div className="p-3">
                         <p className=" text-sm md:text-md font-semibold ">{item?.title}</p>
                         <div className="flex justify-between items-center">
-                        <p className="text-md text-accent">
+                        {/* <p className="text-md text-accent">
                             <CurrencyRupee/> {formatAmount(item?.price)}
-                        </p>
-                        <IconButton>
-                            <FavoriteBorder/>
+                        </p> */}
+
+                        <div className="flex flex-row items-center mt-2">
+                                <p className=" font-semibold text-gray-500 line-through">
+                                    <CurrencyRupee />
+                                    {formatAmount(Math.round(Number(item.price)+((Number(item.price)*Number(item.discount))/100)))}</p>
+
+                                {/* <ArrowForward color="accent" className="mx-3"/> */}
+
+                                    <p className=" font-semibold text-accent ml-3">
+                                    <CurrencyRupee />
+                                    {formatAmount(item.price)}</p>
+                                </div>
+
+                        <IconButton onClick={()=>window.open(`https://api.whatsapp.com/send/?phone=919871973507&text=Hey,\n I want know about your best prices for ${item?.title}.  &type=phone_number&app_absent=0`)}>
+                            <WhatsApp/>
                         </IconButton>
                         </div>
                     </div>

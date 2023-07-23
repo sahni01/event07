@@ -6,7 +6,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import Link from "next/link";
 import { useRouter } from "next/router";
 // import { LoaderContext } from "../../context";
-import Logo from "../../assets/logo.png"
+import Logo from "../../assets/logo1.png"
 import Image from "next/image";
 import { Accessibility, Cake, Celebration, ChevronRight, ChildCare, Collections, Expand, ExpandMore, ExpandMoreSharp, Favorite, FavoriteBorder, FilterVintage, Flatware, Girl, Handshake, Home, Info, Search, Sort, Speaker, Toys, VideoCameraBack, VideogameAsset, Wc, WineBar, Woman } from "@mui/icons-material";
 import { theme } from "@/theme";
@@ -49,7 +49,7 @@ export default function Header() {
             {/* <Loader show={loader}/> */}
             <HeadStrip />
             {/* <header ref={headerRef} className="sticky z-[1001] top-0 shadow-md"> */}
-            <header ref={headerRef} className="sticky w-full bg-white z-[1001] top-0 bg-primary text-secondary py-1 shadow-[#ffb0b0] shadow-md">
+            <header ref={headerRef} className="sticky w-full bg-white z-[1001] top-0 bg-primary text-secondary py-2 shadow-[#ffb0b0] shadow-md ">
                 <div className="flex justify-between items-center px-2  lg:px-10 py-1">
                     {/* <div className="w-1/4 flex flex-row justify-start items-center pl-3 lg:hidden">
                         <div ref={hamburgerRef} className="hamburger" id="hamburger-1" onClick={toggleHamburger}>
@@ -67,7 +67,7 @@ export default function Header() {
 
                     <div className="w-2/4 flex flex-row justify-center items-center lg:w-1/6 text-left">
                         <Link href={"/"}>
-                            <Image src={Logo} alt="Logo" width={140} height={70} className="transition-all scale-100 hover:scale-[1.1]" />
+                            <Image src={Logo} alt="Logo" width={100} height={50} className="transition-all scale-100 hover:scale-[1.1]" />
                         </Link>
                     </div>
                     <div className="hidden w-4/6 text-center lg:block">

@@ -23,7 +23,7 @@ export default function Home() {
         <title>Event07</title>
         <meta name="description" content="Decoration for your celebrations" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/logo.png" />
+        <link rel="icon" href="/logo1.png" />
       </Head>
       <HeroSection />
       <Categories />

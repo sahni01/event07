@@ -2,6 +2,7 @@ import AppContextProvider from '@/contexts';
 import DefaultLayout from '@/layouts/default-layout'
 import '@/styles/globals.css'
 import { createTheme, ThemeProvider } from '@mui/material'
+import 'react-multi-carousel/lib/styles.css';
 
 export default function App({ Component, pageProps }) {
 

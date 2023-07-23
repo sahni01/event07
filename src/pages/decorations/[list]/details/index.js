@@ -64,7 +64,7 @@ export default function DecorationDetails({ }) {
             <title>{decorationDetails?.title}</title>
             <meta name="description" content="Decoration for your celebrations" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
-            <link rel="icon" href="/logo.png" />
+            <link rel="icon" href="/logo1.png" />
           </Head>
                 <div className="w-full flex flex-col md:flex-row">
                     <div className="w-full md:w-1/2">
@@ -84,11 +84,11 @@ export default function DecorationDetails({ }) {
                                 <div className="flex flex-row items-center mt-2">
                                 <p className="text-xl font-semibold text-gray-500 line-through">
                                     <CurrencyRupee />
-                                    {formatAmount(Number(decorationDetails.price)+((Number(decorationDetails.price)*Number(decorationDetails.discount))/100))}</p>
+                                    {formatAmount(Math.round(Number(decorationDetails.price)+((Number(decorationDetails.price)*Number(decorationDetails.discount))/100)))}</p>
 
                                 <ArrowForward color="accent" className="mx-3"/>
 
-                                    <p className="text-xl font-semibold text-gray-500">
+                                    <p className="text-xl font-semibold text-accent">
                                     <CurrencyRupee />
                                     {formatAmount(decorationDetails.price)}</p>
                                 </div>

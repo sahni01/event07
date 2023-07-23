@@ -1,7 +1,7 @@
 import { CopyrightOutlined, CopyrightRounded, FacebookOutlined, Favorite, Instagram, WhatsApp } from "@mui/icons-material";
 import { IconButton } from "@mui/material";
 import Image from "next/image";
-import Logo from "../../assets/logo.png"
+import Logo from "../../assets/logo1.png"
 
 export default function Footer() {
     return (

@@ -5,7 +5,7 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <meta name="description" content="Decoration for your celebrations" />
-        <link rel="icon" href="/logo.png" />
+        <link rel="icon" href="/logo1.png" />
       </Head>
       <body>
         <Main />

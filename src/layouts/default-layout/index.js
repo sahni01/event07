@@ -16,7 +16,7 @@ export default function DefaultLayout({ children }) {
             <div className="w-full relative" onLoad={() => setLoader(false)}>
                 <Loader show={loader} />
                 <Header />
-                <div className="mt-[70.69px]">
+                <div className="">
                     {children}
                 </div>
                 <Footer />
