@@ -36,7 +36,8 @@ export default function Footer() {
                         </div>
                     <div>
 
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.9126617997676!2d77.0275981147873!3d28.482176782477353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d19c6f8c4ca1b%3A0x727226060d773072!2sBlock%20B%2C%20Sheetla%20Colony%2C%20Ashok%20Vihar%20Phase%20II%2C%20Gurugram%2C%20Haryana%20122022!5e0!3m2!1sen!2sin!4v1675448366804!5m2!1sen!2sin" width="100%" className="rounded-lg min-h-[300px] h-full" allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14009.408215008285!2d77.41498023816276!3d28.619208946918604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cee4abb9de49b%3A0x287a032bd7ff51f1!2sGaur%20City%202%2C%20Ghaziabad%2C%20Uttar%20Pradesh%20201009!5e0!3m2!1sen!2sin!4v1714808166651!5m2!1sen!2sin" width="100%" className="rounded-lg min-h-[300px] h-full" allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+
 
                     </div>
                     </div>
