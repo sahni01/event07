@@ -81,7 +81,7 @@ export default function DecorationDetails({ }) {
                                 <p className="text-xl font-semibold">{decorationDetails.title}</p>
                                 <p className=" text-accent font-semibold">Discount : {decorationDetails.discount}%</p>
                                 
-                                <div className="flex flex-row items-center mt-2">
+                                {/* <div className="flex flex-row items-center mt-2">
                                 <p className="text-xl font-semibold text-gray-500 line-through">
                                     <CurrencyRupee />
                                     {formatAmount(Math.round(Number(decorationDetails.price)+((Number(decorationDetails.price)*Number(decorationDetails.discount))/100)))}</p>
@@ -91,7 +91,7 @@ export default function DecorationDetails({ }) {
                                     <p className="text-xl font-semibold text-accent">
                                     <CurrencyRupee />
                                     {formatAmount(decorationDetails.price)}</p>
-                                </div>
+                                </div> */}
     
                                 <div className="px-2">
                                     <p className="mt-4 text-accent font-semibold">Inclusions :-</p>
